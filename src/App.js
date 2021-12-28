@@ -1,23 +1,17 @@
+import React, { useState, useEffect, useRef } from 'react'
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  // pass the value
+  const number = useRef(100);
+  console.log("number is", number);
+  console.log("number.current is", number.current);//100
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Test
     </div>
   );
 }
